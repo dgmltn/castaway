@@ -1,7 +1,7 @@
-//var APP_ID = "0D7CD463";
-//var NAMESPACE = "urn:x-cast:com.dgmltn.cast.shinytweets";
-var APP_ID = 'F7FD2183';
-var NAMESPACE = 'urn:x-cast:com.boombatower.chromecast-dashboard';
+//var APP_ID = "28DF2FDD";
+//var NAMESPACE = "urn:x-cast:com.dgmltn.cast.castaway";
+var APP_ID = "F7FD2183";
+var NAMESPACE = "urn:x-cast:com.boombatower.chromecast-dashboard";
 
 var initialized;
 var session;
@@ -9,7 +9,7 @@ var session;
 var remoteUrl = window.location.protocol + "//" + window.location.host + "/receiver";
 
 // Add required cast sender bits to the html document
-(function() {
+$(function() {
   var imported = document.createElement('script');
   imported.src = '//www.gstatic.com/cv/js/sender/v1/cast_sender.js';
   document.head.appendChild(imported);
